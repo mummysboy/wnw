@@ -1,8 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-// Placeholder portrait — a signature Santa Barbara piece stands in until Wade
-// provides a photo of himself. Swap `portrait` for his headshot when available.
-import portrait from '../assets/paintings/IMG_2463.jpg';
+// Wade at work, painting en plein air. Alternate photos are staged alongside
+// (wade-surf.jpg, wade-porch.jpg, wade-studio.jpg) — swap the import to change.
+import portrait from '../assets/artist/wade-painting.jpg';
 ---
 
 <section id="story" class="story">
@@ -11,13 +11,13 @@ import portrait from '../assets/paintings/IMG_2463.jpg';
       <div class="mat">
         <Image
           src={portrait}
-          alt="Red Tiles and Bell Tower — a Santa Barbara street in watercolor by Wade Norman"
-          widths={[420, 700]}
+          alt="Wade Norman painting a watercolor at his easel, brush in hand"
+          widths={[420, 760, 1000]}
           sizes="(max-width: 820px) 80vw, 440px"
           loading="lazy"
         />
       </div>
-      <figcaption>A painter of the Santa Barbara light</figcaption>
+      <figcaption>Wade at his easel — a painter of the Santa Barbara light</figcaption>
     </figure>
 
     <div class="story__text reveal">
