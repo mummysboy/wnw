@@ -1,0 +1,77 @@
+---
+const year = new Date().getFullYear();
+const FACEBOOK_URL = 'https://www.facebook.com/wade.norman.788524/';
+---
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <span class="footer__name">Wade Norman</span>
+      <span class="footer__tag">Watercolors · Santa Barbara, California</span>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#story">The Artist</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Inquiries</a>
+      <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+    </nav>
+  </div>
+  <div class="wrap footer__base">
+    <p>© {year} Wade Norman. All paintings reproduced with the artist’s permission.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--ink);
+    color: var(--paper);
+    padding-block: clamp(3rem, 6vw, 4.5rem) 1.5rem;
+  }
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5rem 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(247, 242, 232, 0.14);
+  }
+  .footer__name {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .footer__tag {
+    display: block;
+    margin-top: 0.5rem;
+    color: rgba(247, 242, 232, 0.65);
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+  }
+  .footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+  }
+  .footer__nav a {
+    color: rgba(247, 242, 232, 0.82);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    transition: color 0.25s var(--ease);
+  }
+  .footer__nav a:hover {
+    color: #d9a066;
+  }
+  .footer__base {
+    margin-top: 1.4rem;
+  }
+  .footer__base p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: rgba(247, 242, 232, 0.5);
+  }
+</style>

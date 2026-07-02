@@ -1,0 +1,152 @@
+---
+// --- CONFIGURE BEFORE LAUNCH ---
+// 1. Create a free form endpoint at https://formspree.io (or use Netlify Forms)
+//    and paste its URL below.
+// 2. Set Wade's real email for the mailto fallback.
+const FORM_ENDPOINT = 'https://formspree.io/f/your-form-id'; // TODO: replace
+const CONTACT_EMAIL = 'wade@example.com'; // TODO: replace with Wade's email
+---
+
+<section id="contact" class="contact">
+  <div class="wrap wrap--narrow contact__inner reveal">
+    <p class="kicker">Inquiries &amp; Commissions</p>
+    <h2>Bring a painting home</h2>
+    <hr class="rule rule--center" />
+    <p class="contact__lead">
+      Interested in an original, a print, or a commissioned piece of your own
+      stretch of coast? Send Wade a note — he reads and answers each one himself.
+    </p>
+
+    <form class="form" action={FORM_ENDPOINT} method="POST">
+      <div class="form__row">
+        <label class="field">
+          <span>Your name</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+      </div>
+
+      <label class="field">
+        <span>I’m writing about…</span>
+        <select name="subject">
+          <option>A painting I’d like to purchase</option>
+          <option>Commissioning a new piece</option>
+          <option>Prints &amp; availability</option>
+          <option>Just saying hello</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Message</span>
+        <textarea name="message" rows="5" placeholder="Tell Wade which painting caught your eye, or the scene you have in mind…" required></textarea>
+      </label>
+
+      <div class="form__actions">
+        <button type="submit" class="btn">Send your note</button>
+        <a class="form__alt" href={`mailto:${CONTACT_EMAIL}`}>or email directly</a>
+      </div>
+      <p class="form__note">
+        This form is a starting point — connect it to a free Formspree or Netlify
+        Forms endpoint and add Wade’s email before going live.
+      </p>
+    </form>
+  </div>
+</section>
+
+<style>
+  .contact {
+    background: linear-gradient(180deg, var(--paper-warm), var(--paper-deep));
+  }
+  .contact__inner {
+    text-align: center;
+  }
+  .contact__lead {
+    color: var(--ink-muted);
+    font-size: 1.12rem;
+    max-width: 52ch;
+    margin-inline: auto;
+    margin-bottom: 2.6rem;
+  }
+
+  .form {
+    text-align: left;
+    background: #fdfaf3;
+    padding: clamp(1.5rem, 4vw, 2.6rem);
+    border-radius: var(--radius);
+    box-shadow: 0 20px 50px -30px rgba(43, 41, 36, 0.6);
+    border: 1px solid rgba(43, 41, 36, 0.06);
+  }
+  .form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+  }
+  .field {
+    display: block;
+    margin-bottom: 1.1rem;
+  }
+  .field > span {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 0.45rem;
+  }
+  .field input,
+  .field select,
+  .field textarea {
+    width: 100%;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid rgba(43, 41, 36, 0.18);
+    border-radius: var(--radius);
+    padding: 0.7em 0.85em;
+    transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+  }
+  .field textarea {
+    resize: vertical;
+  }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus {
+    outline: none;
+    border-color: var(--coast);
+    box-shadow: 0 0 0 3px rgba(61, 107, 126, 0.15);
+  }
+
+  .form__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  .form__alt {
+    font-size: 0.95rem;
+    color: var(--ink-muted);
+  }
+  .form__note {
+    margin: 1.4rem 0 0;
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+    opacity: 0.8;
+  }
+
+  @media (max-width: 560px) {
+    .form__row {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .form__actions {
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+    }
+  }
+</style>
