@@ -1,68 +1,532 @@
 [
-  { "file": "IMG_2408.jpg", "title": "Sea Stack at the Point", "category": "coast" },
-  { "file": "IMG_2416.jpg", "title": "Boats in the Cove", "category": "harbors" },
-  { "file": "IMG_2463.jpg", "title": "Red Tiles and Bell Tower", "category": "villages" },
-  { "file": "IMG_2399.jpg", "title": "Barn in the Foothills", "category": "country" },
-  { "file": "IMG_2435.jpg", "title": "Sunset Cove", "category": "coast" },
-  { "file": "IMG_2462.jpg", "title": "Boats and Rooftops", "category": "harbors" },
-  { "file": "IMG_2400.jpg", "title": "The Long Pier", "category": "coast" },
-  { "file": "IMG_2401.jpg", "title": "Wildflowers Above the Cove", "category": "coast" },
-  { "file": "IMG_2403.jpg", "title": "Blue Water Beach", "category": "coast" },
-  { "file": "IMG_2404.jpg", "title": "The Sea Cave", "category": "coast" },
-  { "file": "IMG_2405.jpg", "title": "Anchored Below the Point", "category": "harbors" },
-  { "file": "IMG_2406.jpg", "title": "Headland and Sail", "category": "coast" },
-  { "file": "IMG_2407.jpg", "title": "Golden Hour", "category": "coast" },
-  { "file": "IMG_2409.jpg", "title": "Rocky Shore", "category": "coast" },
-  { "file": "IMG_2410.jpg", "title": "The Green Cliff", "category": "coast" },
-  { "file": "IMG_2411.jpg", "title": "Harbor Houses", "category": "harbors" },
-  { "file": "IMG_2412.jpg", "title": "Palm on the Bluff", "category": "coast" },
-  { "file": "IMG_2414.jpg", "title": "Sailboat in the Cove", "category": "harbors" },
-  { "file": "IMG_2415.jpg", "title": "Into the Sea Cave", "category": "coast" },
-  { "file": "IMG_2417.jpg", "title": "Coastal Cliffs", "category": "coast" },
-  { "file": "IMG_2419.jpg", "title": "Lines in the Surf", "category": "coast" },
-  { "file": "IMG_2420.jpg", "title": "Evening Cast", "category": "coast" },
-  { "file": "IMG_2421.jpg", "title": "Low Tide, Distant Hills", "category": "coast" },
-  { "file": "IMG_2422.jpg", "title": "Bluff and Breakers", "category": "coast" },
-  { "file": "IMG_2424.jpg", "title": "The Boat Dock", "category": "harbors" },
-  { "file": "IMG_2425.jpg", "title": "Rowboat at Rest", "category": "harbors" },
-  { "file": "IMG_2426.jpg", "title": "Red Sails", "category": "harbors" },
-  { "file": "IMG_2427.jpg", "title": "Regatta", "category": "harbors" },
-  { "file": "IMG_2429.jpg", "title": "A Walk on the Beach", "category": "coast" },
-  { "file": "IMG_2430.jpg", "title": "The Wave", "category": "coast" },
-  { "file": "IMG_2431.jpg", "title": "Hidden Cove", "category": "coast" },
-  { "file": "IMG_2432.jpg", "title": "Light Over the Bay", "category": "coast" },
-  { "file": "IMG_2433.jpg", "title": "Radiant Coast", "category": "coast" },
-  { "file": "IMG_2434.jpg", "title": "Morning Rays", "category": "coast" },
-  { "file": "IMG_2436.jpg", "title": "Mountain Cabin", "category": "country" },
-  { "file": "IMG_2437.jpg", "title": "Boats at Dusk", "category": "harbors" },
-  { "file": "IMG_2438.jpg", "title": "First Snow", "category": "country" },
-  { "file": "IMG_2440.jpg", "title": "The Footbridge", "category": "country" },
-  { "file": "IMG_2441.jpg", "title": "Still Water", "category": "harbors" },
-  { "file": "IMG_2443.jpg", "title": "Alpine Lake", "category": "country" },
-  { "file": "IMG_2444.jpg", "title": "Pines and Peaks", "category": "country" },
-  { "file": "IMG_2445.jpg", "title": "The Old Barn", "category": "country" },
-  { "file": "IMG_2428.jpg", "title": "The Rialto, Venice", "category": "villages" },
-  { "file": "IMG_2447.jpg", "title": "Village Bridge", "category": "villages" },
-  { "file": "IMG_2448.jpg", "title": "Hilltown", "category": "villages" },
-  { "file": "IMG_2449.jpg", "title": "Winter in the Village", "category": "villages" },
-  { "file": "IMG_2450.jpg", "title": "Autumn Road", "category": "country" },
-  { "file": "IMG_2451.jpg", "title": "Fishing Village", "category": "harbors" },
-  { "file": "IMG_2452.jpg", "title": "The Farmhouse", "category": "country" },
-  { "file": "IMG_2453.jpg", "title": "Cottages by the Field", "category": "country" },
-  { "file": "IMG_2460.jpg", "title": "Quiet Wharf", "category": "harbors" },
-  { "file": "IMG_2461.jpg", "title": "Village on the Water", "category": "harbors" },
-  { "file": "IMG_2464.jpg", "title": "Harbor Flags", "category": "harbors" },
-  { "file": "IMG_2466.jpg", "title": "The Plaza", "category": "villages" },
-  { "file": "IMG_2467.jpg", "title": "Shade Tree and Barn", "category": "country" },
-  { "file": "IMG_2468.jpg", "title": "Adobe Village", "category": "villages" },
-  { "file": "IMG_2469.jpg", "title": "The Old Cannery", "category": "harbors" },
-  { "file": "IMG_2470.jpg", "title": "Boardwalk Afternoon", "category": "harbors" },
-  { "file": "IMG_2472.jpg", "title": "Working Harbor", "category": "harbors" },
-  { "file": "IMG_2473.jpg", "title": "By the Lighthouse", "category": "villages" },
-  { "file": "IMG_2475.jpg", "title": "Sailboats at Anchor", "category": "harbors" },
-  { "file": "IMG_2477.jpg", "title": "Cottage on the Hill", "category": "country" },
-  { "file": "IMG_2479.jpg", "title": "Fisherman's Wharf", "category": "harbors" },
-  { "file": "IMG_2483.jpg", "title": "Along the Docks", "category": "harbors" },
-  { "file": "IMG_2418.jpg", "title": "The Trout", "category": "studies" },
-  { "file": "IMG_2423.jpg", "title": "Sea Turtle", "category": "studies" }
+  {
+    "file": "IMG_2349.jpg",
+    "title": "Wading at the Water’s Edge",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2350.jpg",
+    "title": "The Lighthouse Jetty",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2351.jpg",
+    "title": "Long Swell Below the Cliffs",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2352.jpg",
+    "title": "Umbrellas in the Rain",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2353.jpg",
+    "title": "Cabin in the Wildflower Fields",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2354.jpg",
+    "title": "Lavender Rows",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2355.jpg",
+    "title": "Palm Above the Cove",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2356.jpg",
+    "title": "Houses on the Bluff",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2357.jpg",
+    "title": "The Rugged Headland",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2358.jpg",
+    "title": "Green Bluff Over the Bay",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2359.jpg",
+    "title": "Village Above the Beach",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2360.jpg",
+    "title": "Long Beach Afternoon",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2361.jpg",
+    "title": "Portrait of a Horse",
+    "category": "studies"
+  },
+  {
+    "file": "IMG_2362.jpg",
+    "title": "The Blue Shoreline",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2363.jpg",
+    "title": "Lighthouse at Dusk",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2364.jpg",
+    "title": "Rainy Evening in the City",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2365.jpg",
+    "title": "Cove and Village",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2366.jpg",
+    "title": "Wide Sands",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2367.jpg",
+    "title": "Palms Over the Cove",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2368.jpg",
+    "title": "Autumn in the City",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2369.jpg",
+    "title": "Autumn Rain in the Park",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2370.jpg",
+    "title": "Lighthouse on the Dunes",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2371.jpg",
+    "title": "Paris in the Rain",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2372.jpg",
+    "title": "Alpine Lake",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2373.jpg",
+    "title": "Flag on the Old Barn",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2374.jpg",
+    "title": "City Street in the Rain",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2375.jpg",
+    "title": "Launching the Dinghy",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2376.jpg",
+    "title": "Fishing Boat in Heavy Seas",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2377.jpg",
+    "title": "Rowboat on the Shore",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2378.jpg",
+    "title": "Wet Street, City Lights",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2379.jpg",
+    "title": "Crossing in the Rain",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2380.jpg",
+    "title": "Lighthouse Over the Cove",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2381.jpg",
+    "title": "Cottage by the Inlet",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2382.jpg",
+    "title": "Sledding in the Snow",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2383.jpg",
+    "title": "Winter Walk in the Park",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2384.jpg",
+    "title": "Cabin in the Snow",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2385.jpg",
+    "title": "Skaters on the Pond",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2386.jpg",
+    "title": "Dog on the Beach",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2387.jpg",
+    "title": "The Old Barn",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2388.jpg",
+    "title": "Winter in the Valley",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2408.jpg",
+    "title": "Sea Stack at the Point",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2416.jpg",
+    "title": "Boats in the Cove",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2463.jpg",
+    "title": "Red Tiles and Bell Tower",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2399.jpg",
+    "title": "Barn in the Foothills",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2435.jpg",
+    "title": "Sunset Cove",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2462.jpg",
+    "title": "Boats and Rooftops",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2400.jpg",
+    "title": "The Long Pier",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2401.jpg",
+    "title": "Wildflowers Above the Cove",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2403.jpg",
+    "title": "Blue Water Beach",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2404.jpg",
+    "title": "The Sea Cave",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2405.jpg",
+    "title": "Anchored Below the Point",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2406.jpg",
+    "title": "Headland and Sail",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2407.jpg",
+    "title": "Golden Hour",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2409.jpg",
+    "title": "Rocky Shore",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2410.jpg",
+    "title": "The Green Cliff",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2411.jpg",
+    "title": "Harbor Houses",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2412.jpg",
+    "title": "Palm on the Bluff",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2414.jpg",
+    "title": "Sailboat in the Cove",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2415.jpg",
+    "title": "Into the Sea Cave",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2417.jpg",
+    "title": "Coastal Cliffs",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2419.jpg",
+    "title": "Lines in the Surf",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2420.jpg",
+    "title": "Evening Cast",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2421.jpg",
+    "title": "Low Tide, Distant Hills",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2422.jpg",
+    "title": "Bluff and Breakers",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2424.jpg",
+    "title": "The Boat Dock",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2425.jpg",
+    "title": "Rowboat at Rest",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2426.jpg",
+    "title": "Red Sails",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2427.jpg",
+    "title": "Regatta",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2429.jpg",
+    "title": "A Walk on the Beach",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2430.jpg",
+    "title": "The Wave",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2431.jpg",
+    "title": "Hidden Cove",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2432.jpg",
+    "title": "Light Over the Bay",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2433.jpg",
+    "title": "Radiant Coast",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2434.jpg",
+    "title": "Morning Rays",
+    "category": "coast"
+  },
+  {
+    "file": "IMG_2436.jpg",
+    "title": "Mountain Cabin",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2437.jpg",
+    "title": "Boats at Dusk",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2438.jpg",
+    "title": "First Snow",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2440.jpg",
+    "title": "The Footbridge",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2441.jpg",
+    "title": "Still Water",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2443.jpg",
+    "title": "Alpine Lake",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2444.jpg",
+    "title": "Pines and Peaks",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2445.jpg",
+    "title": "The Old Barn",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2428.jpg",
+    "title": "The Rialto, Venice",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2447.jpg",
+    "title": "Village Bridge",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2448.jpg",
+    "title": "Hilltown",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2449.jpg",
+    "title": "Winter in the Village",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2450.jpg",
+    "title": "Autumn Road",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2451.jpg",
+    "title": "Fishing Village",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2452.jpg",
+    "title": "The Farmhouse",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2453.jpg",
+    "title": "Cottages by the Field",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2460.jpg",
+    "title": "Quiet Wharf",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2461.jpg",
+    "title": "Village on the Water",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2464.jpg",
+    "title": "Harbor Flags",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2466.jpg",
+    "title": "The Plaza",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2467.jpg",
+    "title": "Shade Tree and Barn",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2468.jpg",
+    "title": "Adobe Village",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2469.jpg",
+    "title": "The Old Cannery",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2470.jpg",
+    "title": "Boardwalk Afternoon",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2472.jpg",
+    "title": "Working Harbor",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2473.jpg",
+    "title": "By the Lighthouse",
+    "category": "villages"
+  },
+  {
+    "file": "IMG_2475.jpg",
+    "title": "Sailboats at Anchor",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2477.jpg",
+    "title": "Cottage on the Hill",
+    "category": "country"
+  },
+  {
+    "file": "IMG_2479.jpg",
+    "title": "Fisherman's Wharf",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2483.jpg",
+    "title": "Along the Docks",
+    "category": "harbors"
+  },
+  {
+    "file": "IMG_2418.jpg",
+    "title": "The Trout",
+    "category": "studies"
+  },
+  {
+    "file": "IMG_2423.jpg",
+    "title": "Sea Turtle",
+    "category": "studies"
+  }
 ]

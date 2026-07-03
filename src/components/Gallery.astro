@@ -2,6 +2,11 @@
 import { getImage } from 'astro:assets';
 import paintings from '../data/paintings.json';
 
+export interface Props {
+  artist?: string;
+}
+const { artist = 'Wade Norman' } = Astro.props;
+
 const CATEGORIES = [
   { id: 'all', label: 'All Work' },
   { id: 'coast', label: 'Coast & Surf' },
@@ -36,11 +41,11 @@ const items = await Promise.all(
 );
 ---
 
-<section id="gallery" class="gallery">
+<section id="gallery" class="gallery" data-artist={artist}>
   <div class="wrap">
     <div class="gallery__head reveal">
       <p class="kicker">The Gallery</p>
-      <h2>Sixty-six watercolors</h2>
+      <h2>{artist}’s watercolors</h2>
       <hr class="rule rule--center" />
       <p class="gallery__intro">
         A wandering coastline of paintings — from the surf and sea stacks to busy
@@ -78,7 +83,7 @@ const items = await Promise.all(
             >
               <img
                 src={p.thumb}
-                alt={`${p.title} — watercolor by Wade Norman`}
+                alt={`${p.title} — watercolor by ${artist}`}
                 width={p.w}
                 height={p.h}
                 loading={i < 6 ? 'eager' : 'lazy'}
@@ -387,7 +392,8 @@ const items = await Promise.all(
   function show(btn: HTMLButtonElement) {
     lbImg.src = btn.dataset.full || '';
     const title = btn.dataset.title || '';
-    lbImg.alt = `${title} — watercolor by Wade Norman`;
+    const artistName = document.getElementById('gallery')?.dataset.artist || 'the artist';
+    lbImg.alt = `${title} — watercolor by ${artistName}`;
     lbTitle.textContent = title;
     lbCat.textContent = btn.dataset.cat || '';
     current = visibleButtons().indexOf(btn);

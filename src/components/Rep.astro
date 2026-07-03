@@ -1,0 +1,109 @@
+---
+// Gallery sales representative — single point of contact for the whole gallery.
+const REP = {
+  name: 'Rosario Daniel',
+  role: 'Art Sales Representative',
+  phone: '805-618-6904',
+  phoneHref: 'tel:+18056186904',
+  email: 'rosariodaniel7979@gmail.com',
+};
+
+export interface Props {
+  variant?: 'panel' | 'bar';
+}
+const { variant = 'panel' } = Astro.props;
+---
+
+<section id="contact" class:list={['rep', `rep--${variant}`]}>
+  <div class="wrap rep__inner reveal">
+    {variant === 'panel' && (
+      <p class="kicker">Purchases &amp; Commissions</p>
+      <h2>Bring a painting home</h2>
+      <hr class="rule rule--center" />
+      <p class="rep__lead">
+        For prices, availability, prints, or a commission, reach the gallery’s
+        sales representative — she’ll be glad to help you find the right piece.
+      </p>
+    )}
+
+    <div class="rep__card">
+      <p class="rep__role">{REP.role}</p>
+      <p class="rep__name">{REP.name}</p>
+      <div class="rep__lines">
+        <a class="rep__line" href={REP.phoneHref}>
+          <span class="rep__ico" aria-hidden="true">✆</span>{REP.phone}
+        </a>
+        <a class="rep__line" href={`mailto:${REP.email}`}>
+          <span class="rep__ico" aria-hidden="true">✉</span>{REP.email}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .rep {
+    background: linear-gradient(180deg, var(--paper-warm), var(--paper-deep));
+  }
+  .rep--bar {
+    background: transparent;
+    padding-block: clamp(2rem, 5vw, 3rem);
+  }
+  .rep__inner {
+    text-align: center;
+  }
+  .rep__lead {
+    color: var(--ink-muted);
+    font-size: 1.12rem;
+    max-width: 52ch;
+    margin-inline: auto;
+    margin-bottom: 2.4rem;
+  }
+
+  .rep__card {
+    display: inline-block;
+    background: #fdfaf3;
+    border: 1px solid rgba(43, 41, 36, 0.08);
+    border-radius: var(--radius);
+    padding: clamp(1.6rem, 4vw, 2.4rem) clamp(1.8rem, 5vw, 3.2rem);
+    box-shadow: 0 20px 50px -30px rgba(43, 41, 36, 0.55);
+  }
+  .rep__role {
+    margin: 0 0 0.2rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+  }
+  .rep__name {
+    margin: 0 0 1.1rem;
+    font-family: var(--font-serif);
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    line-height: 1.1;
+    color: var(--ink);
+  }
+  .rep__lines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 2rem;
+  }
+  .rep__line {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-family: var(--font-sans);
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--coast-deep);
+    text-decoration: none;
+  }
+  .rep__line:hover {
+    color: var(--terracotta-deep);
+  }
+  .rep__ico {
+    font-size: 1.05rem;
+    color: var(--terracotta);
+  }
+</style>

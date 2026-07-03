@@ -10,11 +10,15 @@ import '../styles/global.css';
 export interface Props {
   title?: string;
   description?: string;
+  skipTo?: string;
+  skipLabel?: string;
 }
 
 const {
-  title = 'Wade Norman Watercolors — Santa Barbara',
-  description = 'Watercolor paintings of the Santa Barbara coast, its harbors, and golden hills by artist Wade Norman.',
+  title = 'State Street Gallery of Fine Art — Santa Barbara',
+  description = 'State Street Gallery of Fine Art — original paintings from Santa Barbara artists. Different artists, different options to decorate your home.',
+  skipTo = '#gallery',
+  skipLabel = 'Skip to the paintings',
 } = Astro.props;
 ---
 
@@ -25,7 +29,7 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="author" content="Wade Norman" />
+    <meta name="author" content="State Street Gallery of Fine Art" />
     <meta name="theme-color" content="#f7f2e8" />
 
     <!-- Open Graph -->
@@ -37,7 +41,7 @@ const {
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <a class="skip-link" href="#gallery">Skip to the paintings</a>
+    <a class="skip-link" href={skipTo}>{skipLabel}</a>
     <slot />
 
     <style>
